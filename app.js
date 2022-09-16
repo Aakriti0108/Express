@@ -1,3 +1,4 @@
+
 const express = require('express');
 const bodyParser= require('body-parser');
 const app = express();
@@ -15,7 +16,6 @@ app.post('/product',(req,res,next)=>{
     console.log(req.body);
     res.redirect('/')
 })
-
 
 app.use('/',(req,res,next)=>{
     //console.log("In the Middleware!")
